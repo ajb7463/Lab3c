@@ -14,7 +14,7 @@ int sum_n(int n){
     return(0);
   }
   else{
-    return(sum_n(n-1));
+    return(n + sum_n(n-1));
   }
 }
 
