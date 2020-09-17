@@ -14,7 +14,7 @@ int sum_n(int n){
     return(0);
   }
   else{
-    return(n%10 + sum_n(n-1));
+    return(sum_n(n-1));
   }
 }
 
@@ -31,7 +31,7 @@ else
 }
 
 int main(void) {
-  int n = atof(readline("Enter an int: "));
+  int n = atoi(readline("Enter an int: "));
   printf("sum is %i.\n",sum_n(n));
   print_n(readline("Enter a string: "), n);
   return 0;
